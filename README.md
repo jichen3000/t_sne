@@ -32,6 +32,7 @@ THEANO_FLAGS=mode=FAST_RUN,device=gpu,lib.cnmem=1,floatX=float32 python tsne_the
 ## performance test
 
 ### test environment
+```bash
 OS:   Ubuntu 14.04.4 LTS
 CPU:  Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz, 8 cores.
 GPU:  GeForce GTX 660
@@ -39,8 +40,11 @@ GPU:  GeForce GTX 660
 python:  2.7.10
 theano:  0.8.2
 numpy:  1.11.1
+```
 
 ### result
-bumpy code: 162 seconds
+```bash
+numpy code: 162 seconds
 theano code on cpu: 72 seconds
 theano code on gpu: 29 seconds
+```
